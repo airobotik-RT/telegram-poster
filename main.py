@@ -30,7 +30,7 @@ def post():
     bot.send_message(chat_id=channel_id, text=text)
 
 post()    
-schedule.every().day.at("13:00").do(post)
+schedule.every().day.at("09:00").do(post)
 schedule.every().day.at("19:00").do(post)
 
 while True:
